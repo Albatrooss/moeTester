@@ -18,11 +18,11 @@ body {
     left: 0;
     right: 0;
     z-index: -1;
-    height: 120vh;
+    height: 100vh;
 }
 
 #vid {
-    height: 120%
+    height: 120%;
 }
 
 #btn {
@@ -72,4 +72,17 @@ h1::after {
 
 .hidden {
     opacity: 0;
+}
+
+@media only screen and (max-height: 678px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #btn {
+        font-size: 2rem;
+    }
+    #vid {
+        transform: translateX(-50%);
+    }
 }
